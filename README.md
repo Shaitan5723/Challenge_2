@@ -17,4 +17,4 @@ The page is meant to adapt to the screen size of the viewing device by changing 
 
 This is version 1.0 of my Portfolio page. It will be updated in the coming weeks with more information. 
 
-![screenshot of portfolio](/Assets/images/scrnsht.png)
+![screenshot of portfolio](/Assets/images/portfolio-scrn.png)
