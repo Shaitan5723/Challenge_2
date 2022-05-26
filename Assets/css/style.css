@@ -1,0 +1,229 @@
+:root {
+    --background-grey: #1c1c1e; /*sets background color to predetermined variable*/
+    --main-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*sets a default font variable for the page*/
+    --left-space: 200px;  /*sets a default pixel variable for the margins on the page*/
+}
+
+/*includes padding and border in the width and height for all elements*/
+* {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+
+/*establishes the color of the background for the main body of the page*/
+body {
+    background-color: #d9dcd6; /*sets background color*/
+}
+
+/*establishes the properties of the header at the top of the page*/
+header {
+    padding: 20px; /*20 pixels of padding on all sides of the header*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--background-grey); /*sets background color*/
+    color: #ffffff; /*text color:white*/
+    
+}
+
+
+/*establishes the properties of the text under the h1 tag*/
+h1 {
+    font-size: 48px; /*sets font size to 48 px*/
+    color: #ffffff; /*text color:white*/
+    display: inline-block;
+}
+
+/*establishes the properties of the nav element*/
+nav {
+    padding-top: 15px; /*sets 15 pixels of padding to the top of the element*/
+    margin-right: 20px; /*sets 20 pixels of space to the right*/
+    float: right; /*element will float to the right side of the page*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; /*sets font size to 20 px*/
+    overflow: hidden;  /*hides anything that leaves the element's borders*/
+   }
+
+/*establishes the properties of the anchor element*/
+a {
+    color: #ffffff; /*text color:white*/
+    text-decoration: none;
+}
+
+/*establishes the properties of the anchor element under the nav element*/
+nav a {
+    margin-right:20px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+/*when the screen size is less than 800 pixels, the nav bar items will turn vertical instead of horizontal*/
+@media screen and (max-width: 800px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+/*establishes the properties of the 'hero' class*/
+.hero {
+    height: 400px; /*sets height to 800 pixels*/
+    width: 100%; /*sets width to 100% of the containing block*/
+    background-image: url("../images/programming_background.png"); /*sets selected image as a background image*/
+    background-size: cover; /*sets background image to cover entire element*/
+    background-position: center; /*sets background image to center inside the element*/
+    position: relative;
+}
+
+
+/*establishes the properties of the 'aboutme' class*/
+.aboutme {
+    display: inline-block; /*allows other elements to be displayed in the same line*/
+    padding: 50px; /*sets padding of 50 pixels*/
+    height: 400px; /*sets height of 400 pixels*/
+    color: #ffffff; /*text color:white*/
+    background-color: var(--background-grey); /*sets background color to predetermined variable*/
+    overflow: hidden; /*hides anything that leaves the element's borders*/
+}
+
+/*establishes the properties of the h2 element*/
+h2 {
+    font-family: var(--main-font);
+    text-decoration:underline; /*underlines text*/
+    font-size: 36px; /*sets font size to 36 px*/
+    margin-bottom: 20px; /*sets 20 pixels of space on the bottom*/
+}
+
+/*establishes the margins of the elements under the aboutme class*/
+.aboutme h2 {
+    margin-left:var(--left-space); /*sets margin-left to predetermined variable*/
+}
+.aboutme img {
+    margin-left:var(--left-space); /*sets margin-left to predetermined variable*/
+}
+.aboutme p{ 
+    margin-left:var(--left-space); /*sets margin-left to predetermined variable*/
+    margin-top: 50px;
+    font-size:24px;
+}
+
+/*establishes the properties of the portfolio class*/
+.portfolio {
+    margin-left:var(--left-space); /*sets margin-left to predetermined variable*/
+    padding: 50px;
+}
+
+/*establishes the properties of the flex container*/
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap; /*wraps the elements inside the flex container*/
+    justify-content: center; /*centers elements in the flex container*/
+}
+
+/*establishes the properties of the buttons in the flexbox*/
+.flexcontainer button {
+    width: 750px;
+    height: 400px;
+    margin:50px;
+    border-width: 5px;
+    border-radius: 50px;
+    background-size: cover; /*sets background image to cover entire element*/
+    background-position: center; /*sets background image to center inside the element*/
+    position: relative;
+    transition: opacity 1s; /*sets transition time for opacity change when a mouse hovers over the button*/
+}
+
+/*establishes what happens when the mouse hovers over the flexbox buttonsr*/
+.flexcontainer button:hover{
+    opacity:0.7; /*sets opacity to 70%*/
+    cursor: pointer; /*changes cursor to pointer*/
+}
+
+/*establishes the properties of paragraph element inside the flex container*/
+.flexcontainer p {
+    font-size:30px;
+    font-family: var(--main-font); /*sets font size to established default variable*/
+    /*sets textbox 10 pixels off from the bottom left of their respective box*/
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+
+    background-color:var(--background-grey); /*sets background color to preset variable*/
+    color:#ffffff;
+
+    /*sets border properties for the pagragraph element*/
+    border:solid;
+    border-width:2px;
+    border-radius: 15px;
+    border-color:black;
+    padding:10px;
+}
+
+/*establishes the properties of the challenge1 ID*/
+#challenge1 {
+    width: 1600px;
+    height: 800px;
+    background-image:url(../images/challenge1.png); /*links to image in images folder*/
+    background-repeat:no-repeat; /*ensures image does not repeat in the flexbox*/
+}
+
+/*establishes the properties of the Javascript ID*/
+#Javascript {
+    background-image:url(../images/JS_1.png); /*links to image in images folder*/
+}
+
+/*establishes the properties of the Python ID*/
+#Python {
+    background-image:url(../images/python-logo.png); /*links to image in images folder*/
+}
+
+/*establishes the properties of the Java ID*/
+#Java {
+    background-image:url(../images/java.jpg); /*links to image in images folder*/
+}
+
+/*establishes the properties of the CSS ID*/
+#CSS {
+    background-image:url(../images/css_1.jpg); /*links to image in images folder*/
+}
+
+/*establishes the properties of the 'float-left' class*/
+.float-left {
+    float: left; /*element will float to the left side of the containing block*/
+}
+
+
+/*establishes the properties of the text under the h2 tag*/
+h2 {
+    margin-bottom: 20px; /*sets 20 pixels of space on the bottom*/
+    font-size: 36px; /*sets font size to 36 px*/
+}
+
+/*establishes the properties of the contact class*/
+.contact {
+    width:100%; /*takes up width of entire page*/
+    background-color: var(--background-grey); /*sets background color to preset variable*/
+    text-align: center; /*centers text*/
+    padding: 50px;
+    color:#ffffff;
+}
+
+/*establishes the properties of the list under the contact class*/
+.contact ul li {
+    display:inline-block; /*allows list to be displayed horizontally*/
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/*establishes the properties of the anchors under the contact class*/
+.contact a {
+    text-decoration: underline; /*underlines text*/
+    font-size: 16px;  /*text size is set to 16 px*/
+}
+
+/*changes background color when screen size goes below 800px*/
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: rgb(105, 237, 202);
+    }
+  }

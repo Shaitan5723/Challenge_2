@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <!--link to CSS-->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <!--Website Title-->
+    <title>Alex Xu's Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <h1>Alex Xu</h1>
+    <!--Main navigation inside <header>-->
+      <nav class="topnav">
+       
+        <!--About Me nav link-->
+        <a href="#aboutme">About Me</a>
+
+        <!--My Portfolio nav link-->
+        <a href="#work">My Portfolio</a>
+
+        <!--Contact Me nav link-->
+        <a href="#contact">Contact Me</a>
+
+      </nav>
+  </header>
+
+     <!--Main image--> 
+    <figure class="hero">
+    </figure>
+   
+    <!--Main body of text-->
+    <main>
+      <!--About Me Section-->
+      <section id="aboutme" class="aboutme">
+        <h2>About Me</h2>
+        <!--Profile picture + brief introduction-->
+        <img src="./assets/images/profile_pic.png" class="float-left" alt="A_Xu_Avatar"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque efficitur, sapien ut vestibulum congue, nunc leo tincidunt tellus, 
+        et tincidunt sapien purus nec neque. Aenean porta maximus purus, eget rhoncus sem iaculis id. Suspendisse a hendrerit lacus. Nunc vitae faucibus velit. 
+        In et lacinia eros. Vestibulum sapien metus, dictum vitae pellentesque porta, tincidunt eget dolor. Proin eros lorem, consectetur sit amet ligula in, 
+        maximus eleifend purus. Cras purus turpis, fringilla a euismod et, egestas ut turpis. Morbi finibus diam nec orci mollis, id dignissim nibh vulputate.
+        </p>
+      </section>
+      <!--My Portfolio Section-->
+      <section id="work" class="portfolio">
+        <h2>My Portfolio</h2>
+          <!--establishes flexbox for my portfolio-->
+          <div class="flexcontainer">
+            <!--link to my first project-->
+            <button id="challenge1" onclick=window.location.href="https://shaitan5723.github.io/Challenge_1/" target="_blank">
+              <p>Refracting Code</p>
+            </button>
+            <!--link to my second (this) project-->
+            <button id="Javascript" onclick=window.location.href="https://shaitan5723.github.io/Challenge_2/" target="_blank">
+              <p>Javascript</p>
+            </button>
+            <!--Placeholder links are directed to google.com until future projects are submitted-->
+            <button id="Python" onclick=window.location.href="https://www.google.com" target="_blank">
+              <p>Python</p>
+            </button>
+            <!--Placeholder links are directed to google.com until future projects are submitted-->
+            <button id="Java" onclick=window.location.href="https://www.google.com" target="_blank">
+              <p>Java</p>
+            </button>
+            <!--Placeholder links are directed to google.com until future projects are submitted-->
+            <button id="CSS" onclick=window.location.href="https://www.google.com" target="_blank">
+              <p>CSS</p>
+            </button>
+
+          </div>
+
+
+      </section>
+
+      <!--Contact Me Section-->
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <!--List of Contact methods-->
+          <ul>
+            <li>
+              <a>+61 000-000-000</a>
+            </li>
+            <!--Send Mail to my inbox-->
+            <li>
+              <a href="mailto:alexyxu@umich.edu">alexyxu@umich.edu</a>
+            </li>
+            <!--link to my github repositories-->
+            <li>
+              <a href="https://github.com/Shaitan5723?tab=repositories" target="_blank">Github</a>
+            </li>
+            <!--link to my Linkedin-->
+            <li>
+              <a href="https://au.linkedin.com/" target="_blank">Linkedin</a>
+            </li>
+          </ul>
+
+      </section>
+
+    </main>
+
+</body>
+
+</html>
